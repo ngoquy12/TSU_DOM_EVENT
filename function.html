@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Xây dựng phép tính, tính cộng, trừ cho hai số nguyên
+      const firstNumber = 10;
+      const secondNumber = 20;
+
+      // Cú pháp khai Function declaration
+      //   function functionName(tham_so) {
+      //     // Thân hàm
+      //   }
+
+      // a, b đại diện tham số của hàm
+      function sum(a, b, c) {
+        console.log("a: ", a);
+        console.log("b: ", b);
+        console.log("c: ", c);
+
+        // Để trả về giá trị cho 1 hàm, bắt buộc phải có từ khóa return
+        return a + b - c;
+      }
+
+      // Để 1 hàm được thực thi, thì chúng ta cần phải gọi nó
+      // Khi gọi hàm thì cần truyền vào đối số
+      const result = sum(4, 5, 6);
+      const result1 = sum(14, 65, 26);
+      const result2 = sum(84, 215, 56);
+
+      console.log("Result: ", result);
+      console.log("Result 1: ", result1);
+      console.log("Result 2: ", result2);
+    </script>
+  </body>
+</html>

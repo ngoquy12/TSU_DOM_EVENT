@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading" class="heading">Welcome to Rikkei Education</h1>
+    <a id="link" href="https://facebook.com">Facebook</a>
+
+    <h2 class="heading-2">Heading 2</h2>
+    <h2 class="heading-2">Heading 2</h2>
+    <h2 class="heading-2">Heading 2</h2>
+    <h2 class="heading-2">Heading 2</h2>
+
+    <h3 id="heading-3"></h3>
+
+    <script>
+      // Lấy ra phần tử
+      const headingElement = document.getElementById("heading");
+      const linkElement = document.getElementById("link");
+
+      const heading2Element = document.querySelector(".heading-2");
+      const heading2Elements = document.querySelectorAll(".heading-2");
+
+      const heading3Element = document.querySelector("#heading-3");
+
+      // gán nội dung cho 1 phần tử
+      heading3Element.textContent = "Đây là tiêu đề 3";
+      // Thay đổi style cho 1 phần tử
+      heading3Element.style.color = "red";
+      heading3Element.style.fontSize = "24px";
+    </script>
+  </body>
+</html>

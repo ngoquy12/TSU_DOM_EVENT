@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Phương thức for-each
+      const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 4, 9];
+
+      // Trong vòng lặp forEach, không được sử dụng return, break
+      numbers.forEach(function (number, index) {
+        console.log(index + " = ", number);
+      });
+
+      // Phương thức filter (lọc dữ liệu) - Hay được sử dụng trong chức năng lọc và tìm kiếm dữ liệu
+      // filter được sử dụng để duyệt qua mảng, trả về 1 mảng mới, chữa các phàn tử thỏa mãn điều kiện
+      // Nếu không có phần tử thỏa mãn , trả về 1 mảng rỗng
+      const numberFiltered = numbers.filter(function (element, index) {
+        if (element % 2 === 0) {
+          return element;
+        }
+      });
+
+      console.log("numberFiltered: ", numberFiltered);
+
+      // Phương thức find
+      // Duyệt qua mảng và tìm kiếm dữ liệu theo điều kiện, nếu tìm thấy sẽ trả về phần tử đầu tiên
+      const findNumber = numbers.find(function (element, index) {
+        if (element === 4) {
+          return element;
+        }
+      });
+
+      console.log("findNumber: ", findNumber);
+
+      // Phương thức map
+      // Duyệt qua các phần tử của mảng, trả về 1 mảng mới, có số lượng phần tử bằng với số lượng
+      // phần tử của mảng cũ, Tuy nhiên đã được chỉnh sửa
+      const updateNumbers = numbers.map(function (element, index) {
+        return `Đây là số ${element}`;
+      });
+
+      console.log("updateNumbers: ", updateNumbers);
+    </script>
+  </body>
+</html>
