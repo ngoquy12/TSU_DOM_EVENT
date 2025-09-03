@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Quản lý danh sách sinh viên</h3>
+    <form id="form">
+      <input required id="inputName" type="text" placeholder="Tên sinh viên" />
+      <input required id="inputAge" type="number" placeholder="Nhập tuổi" />
+      <input required id="inputClass" type="text" placeholder="Nhập lớp" />
+      <button id="btn-submit">Thêm sinh viên</button>
+    </form>
+
+    <div>
+      <br />
+      <input type="text" placeholder="Tìm kiếm sinh viên theo tên" />
+    </div>
+
+    <div>
+      <br />
+      <table border="1" style="width: 50%">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Tuổi</th>
+            <th>Lớp</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <script src="./practice.js"></script>
+  </body>
+</html>
